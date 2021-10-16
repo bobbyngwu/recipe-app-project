@@ -21,3 +21,8 @@ class ModelTests(TestCase):
         user = get_user_model().objects.create_superuser(
             'testemail@gmail.com', 'test1234'
         )
+        self.assertTrue(user.is_superuser)
+
+
+
+
